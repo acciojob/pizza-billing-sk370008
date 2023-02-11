@@ -64,7 +64,7 @@ public class Pizza {
             if (forTakeaway) System.out.println("Paperbag Added: 20\n");
             if (!isBillGenerated){
                 isBillGenerated = true;
-                return "Total Price: " + String.valueOf(getPrice()) +"\n";
+                System.out.println("Total Price: " + String.valueOf(getPrice()) +"\n");
             }
         }else{
             System.out.println("Base Price Of The Pizza: 400\n");
@@ -73,7 +73,7 @@ public class Pizza {
             if (forTakeaway) System.out.println("Paperbag Added: 20\n");
             if (!isBillGenerated){
                 isBillGenerated = true;
-                return "Total Price: " + String.valueOf(getPrice()) + "\n";
+                System.out.println( "Total Price: " + String.valueOf(getPrice()) + "\n");
             }
         }
         return "";

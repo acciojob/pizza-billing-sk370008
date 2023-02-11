@@ -58,22 +58,22 @@ public class Pizza {
     public String getBill(){
         // your code goes here
         if(isVeg){
-            System.out.println("Base Price Of The Pizza: 300");
-            if(isExtraCheese) System.out.println("Extra Cheese Added: 80");
-            if (isExtraToppings) System.out.println("Extra Toppings Added: 70");
-            if (forTakeaway) System.out.println("Paperbag Added: 20");
+            System.out.println("Base Price Of The Pizza: 300\n");
+            if(isExtraCheese) System.out.println("Extra Cheese Added: 80\n");
+            if (isExtraToppings) System.out.println("Extra Toppings Added: 70\n");
+            if (forTakeaway) System.out.println("Paperbag Added: 20\n");
             if (!isBillGenerated){
                 isBillGenerated = true;
-                return "Total Price: " + String.valueOf(getPrice());
+                return "Total Price: " + String.valueOf(getPrice()) +"\n";
             }
         }else{
-            System.out.println("Base Price Of The Pizza: 400");
-            if(isExtraCheese) System.out.println("Extra Cheese Added: 80");
-            if (isExtraToppings) System.out.println("Extra Toppings Added: 120");
-            if (forTakeaway) System.out.println("Paperbag Added: 20");
+            System.out.println("Base Price Of The Pizza: 400\n");
+            if(isExtraCheese) System.out.println("Extra Cheese Added: 80\n");
+            if (isExtraToppings) System.out.println("Extra Toppings Added: 120\n");
+            if (forTakeaway) System.out.println("Paperbag Added: 20\n");
             if (!isBillGenerated){
                 isBillGenerated = true;
-                return "Total Price: " + String.valueOf(getPrice());
+                return "Total Price: " + String.valueOf(getPrice()) + "\n";
             }
         }
         return "";

@@ -37,6 +37,7 @@ public class Pizza {
         if(!isExtraCheese){
             this.price += 80;
             this.isExtraCheese = true;
+            this.bill += "Extra Cheese Added: 80" + "\n";
         }
     }
 
@@ -45,6 +46,7 @@ public class Pizza {
         if (!isExtraToppings){
             this.price += this.toppings;
             this.isExtraToppings = true;
+            this.bill += "Extra Toppings Added: " + this.toppings + "\n";
         }
     }
 
@@ -53,21 +55,22 @@ public class Pizza {
         if(!forTakeaway){
             this.price += 20;
             forTakeaway = true;
+            this.bill += "Paperbag Added: 20" + "\n";
         }
     }
 
     public String getBill() {
         // your code goes here
         if (!isBillGenerated) {
-            if (isExtraCheese) {
-                this.bill += "Extra Cheese Added: 80" + "\n";
-            }
-            if (isExtraToppings) {
-                this.bill += "Extra Toppings Added: " + this.toppings + "\n";
-            }
-            if (forTakeaway) {
-                this.bill += "Paperbag Added: 20" + "\n";
-            }
+//            if (isExtraCheese) {
+//
+//            }
+//            if (isExtraToppings) {
+//
+//            }
+//            if (forTakeaway) {
+//
+//            }
             this.bill += "Total Price: " + this.price +"\n";
             return this.bill;
         }

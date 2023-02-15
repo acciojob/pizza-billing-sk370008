@@ -59,14 +59,14 @@ public class Pizza {
         }
     }
 
-    public void generateBill(){
-        if (!isBillGenerated) {
-            this.bill += "Total Price: " + this.price +"\n";
-        }
-    }
+
     public String getBill() {
         // your code goes here
-        generateBill();
-        return this.bill;
+        if (!isBillGenerated) {
+            this.bill += "Total Price: " + this.price +"\n";
+            isBillGenerated = true;
+            return this.bill;
+        }
+        return "";
     }
 }

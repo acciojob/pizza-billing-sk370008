@@ -37,6 +37,7 @@ public class Pizza {
         if(!isExtraCheese){
             this.price += 80;
             this.isExtraCheese = true;
+            this.bill += "Extra Cheese Added: 80" + "\n";
         }
     }
 
@@ -59,9 +60,9 @@ public class Pizza {
     public String getBill() {
         // your code goes here
         if (!isBillGenerated) {
-            if (isExtraCheese) {
-                this.bill += "Extra Cheese Added: 80" + "\n";
-            }
+//            if (isExtraCheese) {
+//
+//            }
             if (isExtraToppings) {
                 this.bill += "Extra Toppings Added: " + this.toppings + "\n";
             }

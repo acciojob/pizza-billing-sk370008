@@ -72,6 +72,6 @@ public class Pizza {
             isBillGenerated = true;
             return this.bill;
         }else
-        return "";
+        return this.bill;
     }
 }
